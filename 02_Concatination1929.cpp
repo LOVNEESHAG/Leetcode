@@ -11,7 +11,7 @@ public:
             ans[i] = nums[i];
             ans[i+n] = nums[i];
         }
-        for(int j=0;j<2*n;j++){
+        for(int j=0;j<2*    n;j++){
             cout<<ans[j];
         }
     }
