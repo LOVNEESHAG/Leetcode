@@ -8,6 +8,9 @@ void insertionSort(vector <int>& arr){
             if(arr[j]<arr[j-1]){
                 swap(arr[j-1],arr[j]);
             }
+            else{
+                break;
+            }
         }
     }
     for(int i=0;i<n;i++){
@@ -16,6 +19,7 @@ void insertionSort(vector <int>& arr){
 }
 
 int main(){
+    vector <int> arr1 = {2,3,4,5,1};
     vector <int> arr = {7,4,3,2,5};
     insertionSort(arr);
     return 0;
