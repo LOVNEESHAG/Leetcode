@@ -29,11 +29,8 @@ public:
                 continue;
             }
             //COMPARE IF CURR FREQ IS LESS THAN MIN FREQ IN HEAP CONTINUE ELSE POP MIN FREQ AND PUSH CURR
-            if(curr.first<pq.top().first){   
-                continue;
-            } 
-            pq.pop();
             pq.push(curr);
+            pq.pop();
         }
         //STORE REMAINING ELEMENTS IN HEAP WHICH WILL BE EQUAL TO K ELEMENTS IN A VECTOR
         vector <int> res;
